@@ -50,10 +50,10 @@ export default function Map({ selectedAttraction, onSelectAttraction }) {
         style={{ height: '100%', width: '100%' }}
       >
         <TileLayer
-          attribution='&copy; <a href="http://www.amap.com/">高德地图</a>'
-          url="http://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}"
-          subdomains={['1', '2', '3', '4']}
-          maxZoom={18}
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+          subdomains={['a', 'b', 'c', 'd']}
+          maxZoom={19}
           minZoom={3}
         />
         
