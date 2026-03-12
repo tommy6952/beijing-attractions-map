@@ -47,15 +47,14 @@ export default function Map({ selectedAttraction, onSelectAttraction }) {
       <MapContainer
         center={[39.9163, 116.3972]}
         zoom={11}
-        style={{ height: '100%', width: '100%' }}
+        style={{ height: '100%', width: '100%', backgroundColor: '#e0e0e0' }}
       >
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          subdomains={['a', 'b', 'c']}
-          maxZoom={19}
+          attribution='&copy; <a href="http://www.amap.com/">高德地图</a>'
+          url="http://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7&x={x}&y={y}&z={z}"
+          subdomains={['1', '2', '3', '4']}
+          maxZoom={18}
           minZoom={3}
-          crossOrigin="anonymous"
         />
         
         <MapController selectedAttraction={selectedAttraction} />
