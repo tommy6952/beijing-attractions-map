@@ -51,8 +51,7 @@ export default function Map({ selectedAttraction, onSelectAttraction }) {
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-          subdomains={['a', 'b', 'c', 'd']}
+          url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
           maxZoom={19}
           minZoom={3}
         />
